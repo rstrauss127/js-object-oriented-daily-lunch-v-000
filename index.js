@@ -57,15 +57,14 @@ class Delivery {
   }
 
   meal() {
-    return store.meals.find( meal =>
+    return store.meals.find(
+      function (meal) {
         return meal.id === this.mealId;
-
-    )
+      }.bind(this)
+    );
   }
 
   customer() {
-    return store.customers.find(
-
-    )
+    return store.customers.find()
   }
 }
