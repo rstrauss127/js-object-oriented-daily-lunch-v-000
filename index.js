@@ -48,7 +48,7 @@ class Customer {
     return this.deliveries().map(delivery=> delivery.meal());
   }
 
-  static totalSpent() {
+   totalSpent() {
     return this.meals().reduce(
       function (total, currentval) {
         return currentval + toal;
