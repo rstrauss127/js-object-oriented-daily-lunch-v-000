@@ -69,6 +69,6 @@ class Delivery {
       function(customer) {
         returm customer.id === this.customerId;
       }.bind(this)
-    );
+    )
   }
 }
