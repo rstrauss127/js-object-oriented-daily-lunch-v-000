@@ -27,6 +27,11 @@ class Neighborhood {
       }.bind(this)
     );
   }
+
+  meals() {
+    let x = this.deliveries();
+    return x.unique();
+  }
 }
 
 class Customer {
