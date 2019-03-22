@@ -44,6 +44,17 @@ class Customer {
       }.bind(this)
     );
   }
+
+  meals() {
+    let x = return store.deliveries.filter(
+      function(delivery) {
+        if(delivery.customerId===this.id) {
+          return delivery.mealId;
+        }
+      }.bind(this)
+    );
+    
+  }
 }
 
 class Meal {
