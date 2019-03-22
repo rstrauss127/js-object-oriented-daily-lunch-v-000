@@ -29,8 +29,11 @@ class Neighborhood {
   }
 
   meals() {
+    function onlyUnique(value, index, self) {
+    return self.indexOf(value) === index;
+}
     let allMeals = this.deliveries().map(delivery => delivery.meal());
-    return allMeals.unique();
+    return allMeals.filter(onlyUnique);
   }
 }
 
