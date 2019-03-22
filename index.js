@@ -25,3 +25,9 @@ class Meal {
     this.id = ++mealId;
   }
 }
+
+class Delivery {
+  constructor() {
+    
+  }
+}
