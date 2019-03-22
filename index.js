@@ -29,8 +29,7 @@ class Neighborhood {
   }
 
   meals() {
-    this.deliveries();
-    
+    return store.deliveries.filter(d => d.neighborhood() === this).map(d => d.meal()).uniq();
   }
 }
 
