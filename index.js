@@ -51,7 +51,7 @@ class Customer {
    totalSpent() {
     return this.meals().reduce(
       function (total, currentval) {
-        return currentval + toal;
+        return currentval + total;
       }
     ,0);
   }
