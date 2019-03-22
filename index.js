@@ -60,7 +60,7 @@ class Delivery {
     return store.meals.find(
       function (meal) {
         return meal.id === this.mealId;
-      }
-    )
+      }.bind(this)
+    );
   }
 }
