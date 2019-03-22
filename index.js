@@ -29,8 +29,8 @@ class Neighborhood {
   }
 
   meals() {
-    let x = this.deliveries();
-    return x.uniq();
+    this.deliveries();
+    
   }
 }
 
