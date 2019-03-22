@@ -51,8 +51,8 @@ class Customer {
         if(delivery.customerId===this.id) {
           return delivery.mealId
         }
-      }
-    )
+      }.bind(this)
+    );
   }
 }
 
