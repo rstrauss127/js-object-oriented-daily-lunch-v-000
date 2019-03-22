@@ -30,7 +30,7 @@ class Neighborhood {
 
   meals() {
     let x = this.deliveries();
-    return x.unique();
+    return x.uniq();
   }
 }
 
