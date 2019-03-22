@@ -38,21 +38,13 @@ class Customer {
   }
 
   deliveries() {
-    return store.deliveries.filter(
-      function(delivery) {
-        return delivery.customerId === this.id;
-      }.bind(this)
+    return store.deliveries.filter( delivery =>
+      return delivery.customerId === this.id;
     );
   }
 
   meals() {
-    return store.deliveries.filter(
-      function(delivery) {
-        if(delivery.customerId===this.id) {
-          return delivery.mealId
-        }
-      }.bind(this)
-    );
+
   }
 }
 
