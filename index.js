@@ -29,7 +29,7 @@ class Neighborhood {
   }
 
   meals() {
-    return store.deliveries.filter(d => d.neighborhood() === this).map(d => d.meal()).uniq();
+    let allMeals = this.deliveries().map(delivery => delivery.meal())
   }
 }
 
