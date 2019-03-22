@@ -68,7 +68,7 @@ class Delivery {
     return store.customers.find(
       function(customer) {
         returm customer.id === this.customerId;
-      }.bind(this);
-    )
+      }.bind(this)
+    );
   }
 }
