@@ -67,7 +67,7 @@ class Delivery {
   customer() {
     return store.customers.find(
       function(customer) {
-        returm customer.id === this.customerId;
+        return customer.id === this.customerId;
       }.bind(this)
     )
   }
